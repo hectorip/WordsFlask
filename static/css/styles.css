@@ -1,3 +1,8 @@
 *{
+  color: gray;
+}
+
+.not_found_advice{
   color: red;
+  font-size: 20pt;
 }

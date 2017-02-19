@@ -24,7 +24,6 @@ def api_words(word):
     return jsonify(params)
 
 def get_params_for_word(word):
-
     headers = {
         'app_id': 'bc5402cb',
         'app_key': 'fb1da4ae020a29281b1a9a1845c97343'
@@ -47,6 +46,7 @@ def get_params_for_word(word):
         # print("algo")
         # definitions = [le["entries"]["senses"][0] for le in lexicalEntries]
     else:
+        definitions = []
         print("ERROR!!")
 
     params = {

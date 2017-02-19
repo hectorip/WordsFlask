@@ -2,7 +2,16 @@
 {% block content %}
 <h1>{{word}}</h1>
 
-<p>
-  {{ definitions }}
-</p>
+  <ol>
+  {% if not definitions %}
+    <span class="not_found_advice">
+      No se encontró definición :(
+    </span>
+  {% endif %}
+  {% for definition in definitions %}
+    <li> {{ definition }} </li>
+  {% endfor %}
+
+
+</ol>
 {% endblock %}
